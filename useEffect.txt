@@ -34,5 +34,16 @@ useEffect Hook
 
 
 # useEffect - How to run an Effect ONLY ONCE ?
+    (How to acheive componentDidMount with useEffect)
     + By specifying an empty dependency Array, we can ask react to
         produce effect only once, i.e on initial render
+
+
+# useEffect - How to run useEffect with cleanup ?
+    (How to acheive componentWillUnmount functionality with useEffect)
+    +  When we Unmount a component, Make sure all the subscriptions & listeners 
+        are cancelled i.e clean-up after your component
+    + In Class components, we will handle the cleanup code in componentWillUnmount life-cycle
+    + In functional component, the callback function which is passed as first argument to useEffect 
+        can return a function, which will be executed when the component will unmount
+            So, whatever we return from callback function is basically our Cleanup function
