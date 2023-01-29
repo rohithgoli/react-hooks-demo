@@ -44,3 +44,8 @@
     + As hooks are same as functions, useState Hook can be imported from react
     + It accepts an argument, which is initial state
     + It returns two values, one being current value state & other a function to update the state
+
+    # useState with previous state
+        + Anytime if we have to update state value based on previous state value, always use
+            callback function as argument to State setter, where the callback function has previous state
+            as the argument
