@@ -21,5 +21,15 @@ useEffect Hook
 
     + useEffect is placed inside the component, by doing so, we can access
         the state & props of the component without having to write any additional code
-        
+
+# useEffect - conditional run effects
+    + As we know that useEffect hook calls the callback function after every render
+        but it might cause performance issues in some cases
+        Hence, it is need to conditionally run callback given to useEffect
+
+    + For conditionally executing an effect, we pass in second parameter to useEffect
+        This parameter is an Array, where we will specify for either prop or state that
+        we need to watch for
+        & Thus only if the props or state specified in array changes, Effect will be get executed
+
 
