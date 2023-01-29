@@ -46,4 +46,25 @@ useEffect Hook
     + In Class components, we will handle the cleanup code in componentWillUnmount life-cycle
     + In functional component, the callback function which is passed as first argument to useEffect 
         can return a function, which will be executed when the component will unmount
-            So, whatever we return from callback function is basically our Cleanup function
+            So, whatever we return from callback function is basically our Cleanup function 
+            through which we can avoid memory leak
+
+
+# useEffect - Mistakes oftenly made - Incorrect dependencies
+    + If you think dependency array is a way to specify when to re-run the Effect,
+        you are going to run into problems, instead Dependency array should be thought of 
+        as a way to let react know about everything that the effect must watch for changes
+
+    + Sometimes, there might be need to call a function within useEffect
+        & If that function is defined outside of useEffect , also uses some prop
+        & for useEffect, if we didn't specified that some prop in Dependency array
+        which is not recommended
+
+        So the recommended way is, When we need to call a function within useEffect, we have to
+        define the function within useEffect
+        So that, we will know that we have some prop which needed to be specified as Dependency
+
+    + Hence, be cautious when specifying the Dependency list for useEffect
+
+
+# useEffect - Multiple useEffect calls are allowed inside a functional component
