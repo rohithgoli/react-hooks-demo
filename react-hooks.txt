@@ -1,0 +1,46 @@
+# Hooks in React
+    + What are Hooks in react ? 
+    A feature added in React version 16.8 which allow to use React features
+        without having to write a class
+        eg: State of a component
+    + Hooks can't be used in Classes
+
+    + Why Hooks ?
+        -> JS
+            + Understand how "this" keyword works in JS
+            + Remember to bind event handlers in class components
+            + Classes don't minify very well and make hot reloading very unreliable 
+
+        -> React
+            + There is no particular way to reuse stateful component logic
+            + Higher Order Component (HOC) and render props patterns do address this problem
+            + Makes the code harder to follow
+            + There is a need to share stateful logic in a better way
+
+            + Create components for complex scenarios such as data fetching and subscribing to events
+            + Related code is not organized in one place
+            ex: Data fetching --> In componentDidMount and componentDidUpdate
+            ex: Event listeners --> In componentDidMount and componentWillUnmount
+            + Because of stateful logic, can't break components into smaller ones
+            + It is so much better if all the related code is at one place which Hooks slove
+
+    + Noteworthy Points
+        + React version 16.8 or higher to use Hooks
+        + Can't use Hooks inside of a class component
+        + Hooks don't replace our existing knowledge of React concepts
+            but provide a more direct API to the React concepts we know such as 
+            props, state, refs, context, life cycle
+
+********* IMPORTANT RULES of Hooks **********
+# RULES of Hooks
+    + Only Call Hooks at the Top Level
+        Don't call Hooks inside loops, conditions or nested functions 
+
+    + Only Call Hooks from React functions
+        Call them from within React functional components & not just any regular Javascript function
+
+
+# useState Hooks
+    + As hooks are same as functions, useState Hook can be imported from react
+    + It accepts an argument, which is initial state
+    + It returns two values, one being current value state & other a function to update the state
