@@ -49,3 +49,8 @@
         + Anytime if we have to update state value based on previous state value, always use
             callback function as argument to State setter, where the callback function has previous state
             as the argument
+
+    # useState with object -> using an object as state variable with useState hook
+        + A state variable can be a string, number, boolean , array or object
+        + useState hook setter function does not automatically merge & update the object,
+            we have to do it manually through spread operator and then pass the value
