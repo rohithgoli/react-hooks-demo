@@ -33,3 +33,6 @@ useEffect Hook
         & Thus only if the props or state specified in array changes, Effect will be get executed
 
 
+# useEffect - How to run an Effect ONLY ONCE ?
+    + By specifying an empty dependency Array, we can ask react to
+        produce effect only once, i.e on initial render
