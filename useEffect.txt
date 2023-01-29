@@ -14,3 +14,12 @@ useEffect Hook
         componentDidUpdate & 
         componentWillUnmount
     
+# How it works ?
+    + useEffect takes a callback as an argument, such that
+        react, for every render of the component (i.e after first render & after every update) will execute
+        the callback function provided in useEffect
+
+    + useEffect is placed inside the component, by doing so, we can access
+        the state & props of the component without having to write any additional code
+        
+
