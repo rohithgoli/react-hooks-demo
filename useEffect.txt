@@ -68,3 +68,9 @@ useEffect Hook
 
 
 # useEffect - Multiple useEffect calls are allowed inside a functional component
+
+
+# useEffect - Data fetching
+    + controlled-input --> we need to set the value, and listen to onChange event, to assign 
+        the value back to the element
+        
