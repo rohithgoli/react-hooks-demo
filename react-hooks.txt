@@ -50,7 +50,22 @@
             callback function as argument to State setter, where the callback function has previous state
             as the argument
 
-    # useState with object -> using an object as state variable with useState hook
+    # useState with object -> useState hook if state variable is an Object
         + A state variable can be a string, number, boolean , array or object
         + useState hook setter function does not automatically merge & update the object,
             we have to do it manually through spread operator and then pass the value
+
+    # useState with array -> useState hook if state variable is an array
+        + use spread operator while using setter function
+
+    #SUMMARY - useState
+        + useState hook allows us to add state to functional components
+        + In classes, the state is always an object, whereas with useState hook,
+            the state doesn't have to be an object
+        + The useState hook returns an array with 2 elements
+        + The first element is the current value of the state, and
+            the second element is a state setter function.
+        + New state value depends on the previous state value ?
+            You can pass a function to the setter function
+        + When dealing with objects or arrays, always make sure to spread your state variable
+            and then call the setter function.
