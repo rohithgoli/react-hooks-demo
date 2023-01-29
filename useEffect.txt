@@ -1,0 +1,16 @@
+useEffect Hook
+
+# Need for useEffect hook
+    + while working with class components, we might have performed some side-effects for our components
+        such as Updating DOM, 
+                Fetching data from API endpoint
+                Setting up subscriptions & timers
+    + There are certain problems associated such as repetition of code in various component life cycle methods
+        & unable to maintain functionality related to a side effect at single place.
+    
+    + The Effect hook lets us perform side effects in functional components
+    + It is a close replacement for 
+        componentDidMount,
+        componentDidUpdate & 
+        componentWillUnmount
+    
