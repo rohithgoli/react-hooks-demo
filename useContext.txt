@@ -22,3 +22,10 @@
 
 
 # How to use Context hook ?
+    + First two steps, creating a context & providing the context remains same
+    + useContext hook provides only the consumption of context value simpler
+    + 3 Simple steps to consume the context value
+        1) import useContext from react
+        2) import the necessary contexts
+        3) call the useContext function, passing in the context as its argument
+            & useContext returns the context value
