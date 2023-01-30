@@ -16,3 +16,9 @@
         2) Provide context with value & Provider must wrap children components 
             for value to be available
         3) Consume the context value
+
+    + In case of Multiple contexts, While consuming multiple contexts, code will not be more readable
+        & useContext hook allows us to do in more simpler way
+
+
+# How to use Context hook ?
