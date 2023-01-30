@@ -1,0 +1,18 @@
+# React Context API - What & why ?
+
+    + In general, we have AppComponent as root component, and
+        at nested at several other levels, we have other components
+
+    + It would be nice if we can send data to component, without drilling to every level in 
+        the component tree
+    + Context provides a way to pass data through the component tree without having to pass props down
+        manually at every level
+
+
+# How Context API was used, prior to hooks ?
+    + We want to send data from App component to ComponentF
+    + There are three steps to implement to make use of Context
+        1) Create context - in App component
+        2) Provide context with value & Provider must wrap children components 
+            for value to be available
+        3) Consume the context value
