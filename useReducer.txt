@@ -1,0 +1,29 @@
+#   What & Why of useReducer
+
+    + useReducer --> used for state management
+    + an alternative to useState
+    + useState is built using useReducer
+    + When to useReducer vs useState ?
+
+
+# Concept of Reducer in JavaScript
+
+    + useState - state
+      useEffect - side effects
+      useContext - context API
+      useReducer - reducers
+
+      If you have knowledge of redux, better will be understanding of reducers
+
+      reduce method in js vs useReducer
+
+    + reduce in JavaScript                          useReducer in React
+        array.reduce(reducer, initialValue)             useReducer(reducer, initialState)
+        singleValue = reducer(accumulator, itemValue)   newState = reducer(currentState, action)
+                                                            *** action parameter is what dictates 
+                                                            the tranasition of currentState to newState
+
+    +   reduce method returns a single value            useReducer returns a pair of values,
+                                                        [newState, dispatch]
+
+                                                                
