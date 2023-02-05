@@ -49,3 +49,10 @@
         
         2) State as an object, in case of two different Counters
             Thus we are able to keep track of multiple state variables
+
+
+# Multiple useReducers
+    + Using Multiple useReducers hooks is a better alternative incase we want same type of state transition
+        across multiple state variables
+    + It provides us to reduce complexity of using object in state
+     & also stops us in duplicating the code in reducer function
