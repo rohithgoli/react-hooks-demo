@@ -70,3 +70,8 @@
         1) To create a counter in App.jsx using useReducer hook
         2) To provide & consume the counter context in the required component
             we make use of the context to provide count & dispatch value and use it in child components
+
+
+#   Fetch Data using useReducer
+    + We know fetching data using useEffect hook + useState hook
+    +
