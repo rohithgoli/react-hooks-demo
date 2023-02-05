@@ -38,3 +38,14 @@
             useReducer returns an array containing state, dispatch
                 dispatch method allows us to execute a particular action
                 The argument to dispatch method is an action that is specificed in reducer method
+
+
+# userReducer (Complex state & action)
+    + we are going to implement useReucer with state object & action object
+    + What is the advantages of using state & action as an object ?
+        1) Think about situation where we have to increment or decrement by certain value, 
+            then in action in addition to type, value will also be present
+            Thus by making use of action as an object in reducer function, we can use additional data in reducer function
+        
+        2) State as an object, in case of two different Counters
+            Thus we are able to keep track of multiple state variables
