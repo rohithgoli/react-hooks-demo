@@ -82,3 +82,25 @@
         1) Make necessary imports
         2) Declare initialState & define reducer function
         3) Invoking useEffect & useReducer to fetch the data & set the state
+
+
+# useState vs useReducer
+    + Both of them are meant for state management
+    + When to use useState and When to use useReducer ?
+    +
+    Scenario               | useState                                useReducer
+    -> Type of state       | Number, String, Boolean                 Object or Array
+    -> Number of           | One or two setStateCalls                 Too many
+        state transitions  | 
+    -> Related state       |    No                                      Yes
+        transitions ?      |
+    -> Business logic      |    No business logic                       Complex business logic
+    -> Local vs Global     |    Local                                   Global
+
+        Although we use useContext, using useReducer Hook over useState hook has an advantage,
+            with useReducer , we have to pass just one dispatch function down the component tree
+            which can update several state variable based on action type
+
+            but using useState, we have to pass multiple update functions one for each state
+
+            Hence, for Global state management , useReducer is better choice
