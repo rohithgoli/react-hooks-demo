@@ -7,6 +7,7 @@ import ComponentC from './components/ComponentC';
 import CounterTwo from './components/CounterTwo';
 import CounterThree from './components/CounterThree';
 import DataFetchingOne from './components/DataFetchingOne';
+import DataFetchingTwo from './components/DataFetchingTwo';
 
 export const CountContext = React.createContext()
 
@@ -31,6 +32,7 @@ function App() {
   return (
     <>
     <DataFetchingOne />
+    <DataFetchingTwo />
     <CountContext.Provider 
       value={{countState: count, countDispatch: dispatch}}
     >

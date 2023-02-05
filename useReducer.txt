@@ -72,6 +72,13 @@
             we make use of the context to provide count & dispatch value and use it in child components
 
 
-#   Fetch Data using useReducer
+#   Fetch Data using useState & useEffect
     + We know fetching data using useEffect hook + useState hook
-    +
+
+
+#   Fetch DAta using useReducer & useEffect
+    + IN doing so, we have grouped the related state variables together & state transitions are also grouped together
+    + 4 steps to implement
+        1) Make necessary imports
+        2) Declare initialState & define reducer function
+        3) Invoking useEffect & useReducer to fetch the data & set the state
