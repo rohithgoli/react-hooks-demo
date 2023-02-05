@@ -26,4 +26,15 @@
     +   reduce method returns a single value            useReducer returns a pair of values,
                                                         [newState, dispatch]
 
-                                                                
+
+# useReducer (Simple state & action)
+    + Counter example using useReducer
+    + 1) import useReducer from react
+      2) Define reducer function & initialState outside the components
+         action is an instruction to the reducer function by which it performs necessary tranasition
+         + use switch stmt for actions 
+      3) We need to get hold of value to display in jsx & we need to get a way to call reducer function
+         with appropriate action
+            useReducer returns an array containing state, dispatch
+                dispatch method allows us to execute a particular action
+                The argument to dispatch method is an action that is specificed in reducer method
