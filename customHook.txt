@@ -11,4 +11,9 @@
     + A custom hook that updates the document title.
 
 
-# useCounter
+# useCounter 
+
+# useInput
+    + implemnet a simple form where the user can submit firstName & lastName
+    + to encapsulate controlled component behaviour for input element i.e binding
+        value & onChange
