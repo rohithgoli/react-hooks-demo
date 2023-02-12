@@ -1,0 +1,16 @@
+# useRef
+    + this hook makes it possible to access DOM nodes directly
+        within functional component
+    + eg: focussing a text input
+        considering a login form
+            As soon as the page loads, we want the username input field
+            to be focussed
+
+        As we want on page load, --> componentDidMount --> useEffect with empty Dependency array
+        & to implement useRef
+
+        1) import useRef from react
+        2) create a ref variable by calling useRef & passing the initial value
+        3) Once we create a ref, we need to attach it to the input element
+            for this, we make use of reserved attribute "ref"
+        4)
