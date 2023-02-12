@@ -1,0 +1,20 @@
+# useMemo hook
+    + for performance optimization
+    + we need a way to tell react, not to recalculate certain values unnecessarily
+        especially when taking long time
+        --> useMemo hook
+
+    + Through useMemo hook, that will only  re-compute the cached value, when one of the dependencies
+        changed
+
+ + For the first argument to useMemo hook, we pass in the function whose return value needs to be cached
+    In second argument, specify the array of dependencies
+        Thus we are telling the react, in case of change in dependency, do not use cached value & 
+        re-calculate the value 
+
+ + useCallback vs useMemo
+    + useCallback caches the provided function instance
+    + useMemo invokes the provided function & caches its result
+
+    + Thus If we need to cache a function --> useCallback
+    + If we need to cache result --> useMemo
