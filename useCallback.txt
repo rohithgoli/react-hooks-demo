@@ -1,0 +1,48 @@
+# useCallback hook
+    + Performance optimization
+    + What is useCallback hook ? Why we have to use it ?
+    + How we have to use it ?
+
+ + Here ParentComponent holds several other componenst
+    & need for re-render of any one Component re-renders all other components
+    ==> Performance Issues
+
+ + To improve Performance, we have to restrict re-renders for ONLY the component 
+    which needs to be re-rendered
+    eg: If age is incremented, ONLY the Age, Button for Age should re-render
+ 
+ + HOW do we optimize this?
+    ->> React.memo
+        is a Higher Order Component, that will prevent a functional component from being
+        re-rendered, IF its props or state do not change.
+ 
+       + So, while exporting, wrap the component with React.memo
+
+       + Now, IF we click to Increase Age, we can observe some optimization, 
+            but still the Button to increment Salary is also re-rendering
+        
+            REASON: because a new incrementSalary function is being created each time when 
+                the ParentComponent re-renders
+                * When dealing with functions, we always have to deal with reference equality
+                i.e Even though two functions have the exact same behaviour, it does not mean they are 
+                    equal to each other
+                    Thus, the function incrementSalary before the re-render is different from the function after the re-render
+                    & Since the function is a prop, React.memo sees that the prop is changed & will not prevent the re-render.
+
+            HOW TO FIX THIS? 
+                How to tell react that no need to create a new incrementSalary function when age is updated ?
+                + --> useCallback Hook
+
+    + WHAT is useCallback ?
+        a hook that will return a memoized version of the callback function that only 
+        changes if one of the dependencies has changed.
+    
+    + WHY we need ?
+        It is useful when passing callbacks to optimized child components that rely on reference equality
+        to prevent unnecessary renders.
+
+    + HOW to use it ?
+        1) import useCallback hook(a function)  from react
+        2) call it , it accepts two parameters, first is callback function & second is an array of dependencies
+
+    + Ref: https://kentcdodds.com/blog/usememo-and-usecallback
