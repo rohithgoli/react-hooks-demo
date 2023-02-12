@@ -1,0 +1,12 @@
+# custom hooks
+
+    + It is encouraged to build custom hooks by extracting 
+        component logic into reusable functions
+    + Custom hook is a javascript function whose name starts with "use"
+    + A custom hook can also call other hooks if required
+    + Why ?
+        share logic between components -> All HOCs & render props
+
+# useDocumentTitle
+    + A custom hook that updates the document title.
+    
