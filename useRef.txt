@@ -13,4 +13,13 @@
         2) create a ref variable by calling useRef & passing the initial value
         3) Once we create a ref, we need to attach it to the input element
             for this, we make use of reserved attribute "ref"
-        4)
+        
+    + useRef can also be used to store any mutable value (similar to instance properties of class component)
+        & value will persist through the re-renders
+        & also do not cause any additional render while the value changes
+
+    
+Refer:
+    + useImperativeHandle
+    + useLayoutEffect
+    + useDebugValue
