@@ -1,0 +1,14 @@
+# react Context
+    Avoids props drilling while passing data through the component tree
+
+    + createContext, export Provider and Consumer components
+    + Providing Context through Provider Component with value
+    + Consuming Context using Consumer Component & passing the function as its child
+        the function receives context value as its parameter, which can then be used to return
+        the desired jsx
+
++ We can set default value while creating context. We can pass default value as a parameter to the 
+    createContext
+    This default value will ONLY be used if the component does not have a matching Provider in the
+    component tree
+    
