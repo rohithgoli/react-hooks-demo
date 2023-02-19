@@ -20,7 +20,14 @@
         as similar const ironMan = withSuit( TonyStark )
     
     + withCounter.js ---> FileName convention in HOC
-    
+
 
 
 + Some other details about HOC
+
+    + Passing down the props
+    + Passing parameters to the HOC function
+
+    + eg: connect is a HOC in redux
+            withRouter is a HOC
+            withStyles is a HOC
