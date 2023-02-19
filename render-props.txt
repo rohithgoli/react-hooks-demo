@@ -1,0 +1,8 @@
+# render-prop pattern
+    + to share code between react components
+    + What is the need for render-props ?
+        + a need to share the common functionality between the components
+
+
+    + What the render-prop pattern is ? & How to implement it ?
+
