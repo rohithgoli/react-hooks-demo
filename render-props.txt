@@ -4,5 +4,17 @@
         + a need to share the common functionality between the components
 
 
-    + What the render-prop pattern is ? & How to implement it ?
+# What the render-prop pattern is ? & How to implement it ?
+    + A User component where props are passed as
+        constant,
+        return value from function
+        return value from function which has parameters 
 
+    + $$$$
+        In react, it is possible to use a prop whose value is a function
+            to control, what is actually rendered by the component 
+      $$$$
+        This is what render props pattern is based on
+
+    + The term "render prop" refers to a technique for """sharing code""" between
+        React components using a """prop whose value is a function"""
