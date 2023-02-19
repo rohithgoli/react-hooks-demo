@@ -19,7 +19,8 @@
 
         as similar const ironMan = withSuit( TonyStark )
     
-    + 
+    + withCounter.js ---> FileName convention in HOC
+    
 
 
 + Some other details about HOC
