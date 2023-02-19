@@ -1,0 +1,25 @@
+#   Higher Order component
+
+    + What is the need for Higher Order component
+        + ClickCounter with Click functionality --> Click Counter
+            & client also needs Hover functionality --> Hover Counter
+            & client asks another requirement, need an input element that counts key presses
+
+        + How to reuse the code ?
+            + Lifting the state is not a correct solution as in scenario where required components if present along different levels
+                in component tree, lifting state is not correct approach
+            + There is a need to share common functionality between the components without repeating the code
+                & where the concept of Higher Order Components comes into picture
+
+
++ What is HOC & How to create one ?
+    + HOC is pattern where the function takes a component as an argument and returns a new component
+        const NewComponent = higherOrderComponent( originalComponent )
+    + Typically HOC adds additional functionality or data to originalComponent
+
+        as similar const ironMan = withSuit( TonyStark )
+    
+    + 
+
+
++ Some other details about HOC
