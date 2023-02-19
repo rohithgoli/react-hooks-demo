@@ -1,0 +1,3 @@
+# react & HTTP
+    + react does not bother about requests, it needs only data which is available either in props or state
+    
