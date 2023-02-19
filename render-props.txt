@@ -18,3 +18,9 @@
 
     + The term "render prop" refers to a technique for """sharing code""" between
         React components using a """prop whose value is a function"""
+
+    + Sharing code using render-props pattern
+        1) Creating a Counter component
+            + this Counter component will be a container component where we implement common functionality
+            + render prop is going to control what will be rendered by the Counter component
+                Hey take the count state & incrementCount and render whatever you want to , i will handle the counter logic
