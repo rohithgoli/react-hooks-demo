@@ -1,6 +1,7 @@
 import React, {Component} from 'react'
 import './App.css'
 import PostList from './components/PostList'
+import PostForm from './components/PostForm'
 
 class App extends Component {
 
@@ -8,7 +9,8 @@ class App extends Component {
     const {posts} = this.state
     return (
       <div className="App">
-        <PostList />
+        {/* <PostList /> */}
+        <PostForm />
       </div>
     )
   }
